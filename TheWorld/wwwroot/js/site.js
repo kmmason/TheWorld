@@ -1,5 +1,6 @@
 ﻿// site.js
 
+(function () {
 var ele = document.getElementById("username");
 ele.innerHTML = "Bill Johnson"
 
@@ -11,3 +12,5 @@ main.onmouseenter = function () {
 main.onmouseleave = function () {
     main.style.backgroundColor = "";
 };
+
+})();
