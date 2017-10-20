@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TheWorld.Services;
+using TheWorld.Models;
 
 namespace TheWorld
 {
@@ -42,6 +43,8 @@ namespace TheWorld
       {
         // Implement a real Mail Service
       }
+
+      services.AddDbContext<WorldContext>();
 
       services.AddMvc();
     }
